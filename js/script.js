@@ -59,7 +59,7 @@ function addPagination(list){
        if(e.target.tagName === "BUTTON"){
           document.querySelectorAll('.active')[0].className = '';
           e.target.classList.add('active');
-          showPage(data, e.target.textContent)
+          showPage(list, e.target.textContent)
           }
        }
     )
