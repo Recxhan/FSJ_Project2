@@ -97,11 +97,12 @@ function search() {
    if (searchData.length > 1){
       showPage(searchData, 1);
       addPagination(searchData);
-   } else if (input.value == '') {
-      showPage(data, 1);
-      addPagination(data);
-   } else {
+   }else {
       studentList.innerHTML = `<strong> No matching is found</strong>`;
       linkList.innerHTML = '';
-   }
-}}
+   }}
+   if (input.value == '') {
+      showPage(data, 1);
+      addPagination(data);
+   } 
+}
